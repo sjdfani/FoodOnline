@@ -32,8 +32,8 @@ class User(AbstractBaseUser):
     def __str__(self) -> str:
         return self.email
 
-    def has_permission(self, perms, obj=None):
+    def has_perm(self, perms, obj=None):
         return self.is_admin
 
-    def has_module_permission(self, app_label):
+    def has_module_perms(self, app_label):
         return True
