@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': env('DATABASE_NAME'),
         'USER': env('DATABASE_USER'),
         'PASSWORD': env('DATABASE_PASSWORD'),
-        'HOST':'localhost',
+        'HOST': 'localhost',
         'PORT': env('DATABASE_PORT'),
     }
 }
@@ -108,6 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+AUTH_USER_MODEL = 'accounts.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
